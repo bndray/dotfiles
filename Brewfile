@@ -1,6 +1,7 @@
 # 'brew tap'
 # tap "homebrew/cask"
 # tap Homebrew/cask-fonts
+tap "romkatv/powerlevel10k"
 
 # set arguments for all 'brew cask install' commands
 cask_args appdir: "~/Applications", require_sha: true
@@ -14,6 +15,8 @@ cask "1password"
 # Install Oh-my-zsh extensions
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "zsh-history-substring-search"
+brew "romkatv/powerlevel10k/powerlevel10k"
 
 ## Languages....
 #brew install rust                 # I installed this manually (following Doug Milford's guide with VS Code)

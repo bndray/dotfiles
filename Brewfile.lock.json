@@ -3,6 +3,9 @@
     "tap": {
       "homebrew/cask": {
         "revision": "0e98f2e3ffba1a52f2ca079e129beb1106603af2"
+      },
+      "romkatv/powerlevel10k": {
+        "revision": "d6934255926482d05a928e21cb0764738369e1ea"
       }
     },
     "cask": {
@@ -372,7 +375,12 @@
       "yarn": {
         "version": "1.22.10",
         "bottle": false
-      }
+      },
+      "zsh-history-substring-search": {
+        "version": "1.0.2",
+        "bottle": false
+      },
+      "romkatv/powerlevel10k/powerlevel10k": null
     },
     "mas": {
       "Todoist": {
@@ -390,7 +398,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "2.6.2",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "386111a04c8f09f72c60548e519a3e27fade9c34",
+        "Homebrew/homebrew-core": "4da6124d0c7f40bd7ee53ffec9947fca6a7fcd5a",
         "CLT": "12.3.0.0.1.1607026830",
         "Xcode": "12.0",
         "macOS": "11.1"
