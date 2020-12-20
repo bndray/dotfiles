@@ -1,1 +1,7 @@
 .cfg
+.bash_history
+.zsh_history
+.python_history
+.oh-my-zsh
+.rustup
+.vscode
