@@ -24,6 +24,8 @@ brew "nodejs"
 brew "yarn"
 brew "aws-shell"
 brew "awscli"
+brew "minikube"						# Kubernetes for local clusters
+cask "docker"						# Docker Desktop (can be used as driver for minikube once Docker has been running)
 
 # Install apps from Mac Store...
 mas "Todoist", id: 585829637       # Todoist
