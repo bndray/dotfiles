@@ -380,7 +380,57 @@
         "version": "1.0.2",
         "bottle": false
       },
-      "romkatv/powerlevel10k/powerlevel10k": null
+      "romkatv/powerlevel10k/powerlevel10k": null,
+      "aws-shell": {
+        "version": "0.2.2",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/aws-shell-0.2.2.big_sur.bottle.tar.gz",
+              "sha256": "aee32db7e96f9239cf9bbb10d59589f9f890757efc73aab1f186dc2989fe211c"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/aws-shell-0.2.2.catalina.bottle.tar.gz",
+              "sha256": "d8f0c4ef68861caf28dd575f0f5999a512df996aee959c340fa9d0a7d60dcac0"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/aws-shell-0.2.2.mojave.bottle.tar.gz",
+              "sha256": "140dd82c2a4222400fed642d61b13b2b6e4afe76edc4c49a877b3124775e382a"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/aws-shell-0.2.2.high_sierra.bottle.tar.gz",
+              "sha256": "2c963b5ee92cdf2a8c272aba8f37b878018794a84ef523532e19b3b55fa9770b"
+            }
+          }
+        }
+      },
+      "awscli": {
+        "version": "2.1.13",
+        "bottle": {
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "files": {
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/awscli-2.1.13.big_sur.bottle.tar.gz",
+              "sha256": "90bd32296607c333384d8db14d2b8528657d975bfc635562dc6dc65d4b0e3b5d"
+            },
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/awscli-2.1.13.arm64_big_sur.bottle.tar.gz",
+              "sha256": "61f25dce760b82a44b06786489945b007327a993894ce1fc5d810be483aafd1b"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/awscli-2.1.13.catalina.bottle.tar.gz",
+              "sha256": "a17c2e2cf81b91374e0a44ab8feb28950c6380151f96393926c7e3340b09f5e0"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/awscli-2.1.13.mojave.bottle.tar.gz",
+              "sha256": "6d4176b9056a5afd3050b8b5f63ddb37e75826a29da1e231b940f250158d01ed"
+            }
+          }
+        }
+      }
     },
     "mas": {
       "Todoist": {
@@ -398,7 +448,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "2.7.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "a74d940b9fb6df03303bfe2379e79a7d85f04a32",
+        "Homebrew/homebrew-core": "5fe63e0632e180a287c39d12f8f3b8530a81b597",
         "CLT": "12.3.0.0.1.1607026830",
         "Xcode": "12.0",
         "macOS": "11.1"

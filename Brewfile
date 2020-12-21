@@ -22,6 +22,8 @@ brew "romkatv/powerlevel10k/powerlevel10k"
 #brew install rust                 # I installed this manually (following Doug Milford's guide with VS Code)
 brew "nodejs"
 brew "yarn"
+brew "aws-shell"
+brew "awscli"
 
 # Install apps from Mac Store...
 mas "Todoist", id: 585829637       # Todoist

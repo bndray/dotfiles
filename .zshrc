@@ -69,7 +69,6 @@ fi
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(z git colored-man-pages)
 
-ZSH_DISABLE_COMPFIX="true"                # This avoids warnings that are unimportant
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
