@@ -2,7 +2,6 @@
 ## NOTE: A fresh install of everything below (on Big Sur) will only take 50GB on the hard drive
 
 # Install Brew and then run it over my ~/Brewfile...
-
 which -s brew
 if [[ $? != 0 ]] ; then
     # Install Homebrew
@@ -11,12 +10,12 @@ else
     brew update
 fi
 
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install Oh-my-zsh (remove any existing directory of oh-my-zsh if exists)...
-rm -rf $HOME/.Oh-my-zsh 
+rm -rf ~/.oh-my-zsh 
+unset ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh}/themes/powerlevel10k
+#git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh}/themes/powerlevel10k
 
 ## Run Brewfile...
 brew bundle install

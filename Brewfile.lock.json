@@ -5,7 +5,7 @@
         "revision": "0e98f2e3ffba1a52f2ca079e129beb1106603af2"
       },
       "romkatv/powerlevel10k": {
-        "revision": "d6934255926482d05a928e21cb0764738369e1ea"
+        "revision": "fcc78a6b3cd84d8c0ebbf1db535adb98a29e3753"
       }
     },
     "cask": {
@@ -396,9 +396,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "2.6.2",
+        "HOMEBREW_VERSION": "2.7.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "4da6124d0c7f40bd7ee53ffec9947fca6a7fcd5a",
+        "Homebrew/homebrew-core": "a74d940b9fb6df03303bfe2379e79a7d85f04a32",
         "CLT": "12.3.0.0.1.1607026830",
         "Xcode": "12.0",
         "macOS": "11.1"
