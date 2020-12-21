@@ -2,15 +2,28 @@
 ## NOTE: A fresh install of everything below (on Big Sur) will only take 50GB on the hard drive
 
 # Install Brew and then run it over my ~/Brewfile...
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+which -s brew
+if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+    brew update
+fi
+
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install Oh-my-zsh (remove any existing directory of oh-my-zsh if exists)...
 rm -rf $HOME/.Oh-my-zsh 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh}/themes/powerlevel10k
 
 ## Run Brewfile...
 brew bundle install
+
+## Load config for ITerm...
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/iterm"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 
 ## Install VS Code extensions I use...

@@ -5,3 +5,4 @@
 .oh-my-zsh
 .rustup
 .vscode
+.dotfiles/myZSH/secrets.zsh
