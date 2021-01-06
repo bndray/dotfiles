@@ -23,13 +23,17 @@ brew "romkatv/powerlevel10k/powerlevel10k"
 brew "nodejs"
 brew "yarn"
 brew "aws-shell"
-brew "awscli"
+#brew "awscli"                      # This seems to be AWS CLI V1 (not V2)
 brew "minikube"						# Kubernetes for local clusters
 cask "docker"						# Docker Desktop (can be used as driver for minikube once Docker has been running)
 
 # Install apps from Mac Store...
 mas "Todoist", id: 585829637       # Todoist
 mas "Spark", id: 1176895641        # Spark email client
+mas "Amphetamine", id: 937984704   # Amphetamine - keep computer awake
+mas "Gestimer", id: 990588172      # Quick countdown timer
+mas "LiquidText", id: 922765270    # Research tool for collating documents with annotations/references
+mas "Day one", id: 1055511498      # Day One diary
 
 ## Browsers....
 cask "firefox"
@@ -54,8 +58,8 @@ cask "handbrake"
 cask "fantastical"
 cask "gemini"
 cask "paragon-ntfs"                # For this to work, you have to do a manual step to navigate to and open the .app (otherwise just download and installl manually!)
-cask "little-snitch"
-cask "nordvpn"
+#cask "little-snitch"
+#cask "nordvpn"
 cask "signal"
 cask "adobe-creative-cloud"
 cask "postman"
