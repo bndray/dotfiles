@@ -10,15 +10,15 @@ else
     brew update
 fi
 
+## Run Brewfile...
+brew bundle install
 
 # Install Oh-my-zsh (remove any existing directory of oh-my-zsh if exists)...
 rm -rf ~/.oh-my-zsh 
 unset ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
-#git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh}/themes/powerlevel10k
 
-## Run Brewfile...
-brew bundle install
+
 
 ## Load config for ITerm...
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/iterm"
