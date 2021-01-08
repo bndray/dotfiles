@@ -3,8 +3,6 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ben/.oh-my-zsh"
-export ZSH_CUSTOM="$HOME/.dotfiles/myZSH"
-export ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
