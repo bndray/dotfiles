@@ -73,6 +73,7 @@ source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # User configuration
 
