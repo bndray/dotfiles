@@ -30,7 +30,7 @@
         }
       },
       "firefox": {
-        "version": "84.0",
+        "version": "84.0.2",
         "options": {
           "full_name": "firefox",
           "args": {
@@ -40,7 +40,7 @@
         }
       },
       "google-chrome": {
-        "version": "87.0.4280.88",
+        "version": "87.0.4280.141,4280.141",
         "options": {
           "full_name": "google-chrome",
           "args": {
@@ -50,7 +50,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.52.0",
+        "version": "1.52.1",
         "options": {
           "full_name": "visual-studio-code",
           "args": {
@@ -70,7 +70,7 @@
         }
       },
       "appcleaner": {
-        "version": "3.5.1",
+        "version": "3.5.1,3955",
         "options": {
           "full_name": "appcleaner",
           "args": {
@@ -80,7 +80,7 @@
         }
       },
       "alfred": {
-        "version": "4.3_1205",
+        "version": "4.3,1205",
         "options": {
           "full_name": "Alfred",
           "args": {
@@ -90,7 +90,7 @@
         }
       },
       "bartender": {
-        "version": "4.0.32",
+        "version": "3.1.25,31125",
         "options": {
           "full_name": "bartender",
           "args": {
@@ -130,7 +130,7 @@
         }
       },
       "whatsapp": {
-        "version": "2.2049.8",
+        "version": "2.2049.10",
         "options": {
           "full_name": "WhatsApp",
           "args": {
@@ -170,7 +170,7 @@
         }
       },
       "fantastical": {
-        "version": "3.3.3",
+        "version": "3.3.4",
         "options": {
           "full_name": "fantastical",
           "args": {
@@ -220,7 +220,7 @@
         }
       },
       "signal": {
-        "version": "1.39.2",
+        "version": "1.39.4",
         "options": {
           "full_name": "signal",
           "args": {
@@ -240,7 +240,7 @@
         }
       },
       "postman": {
-        "version": "7.36.0",
+        "version": "7.36.1",
         "options": {
           "full_name": "postman",
           "args": {
@@ -318,6 +318,16 @@
             "require_sha": true
           }
         }
+      },
+      "docker": {
+        "version": "3.0.4,51218",
+        "options": {
+          "full_name": "docker",
+          "args": {
+            "appdir": "~/Applications",
+            "require_sha": true
+          }
+        }
       }
     },
     "brew": {
@@ -356,6 +366,10 @@
               "url": "https://homebrew.bintray.com/bottles/zsh-syntax-highlighting-0.7.1.big_sur.bottle.1.tar.gz",
               "sha256": "0f75f5893a2179a2b1990bfb1a8e28ff3cf312dde3e11504504e9c32aed91725"
             },
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/zsh-syntax-highlighting-0.7.1.arm64_big_sur.bottle.1.tar.gz",
+              "sha256": "aebae47a0461de83530eb59106818889fc1a1a0e3cec2ddcefe629c3c8c172bd"
+            },
             "catalina": {
               "url": "https://homebrew.bintray.com/bottles/zsh-syntax-highlighting-0.7.1.catalina.bottle.1.tar.gz",
               "sha256": "8b240a93c28b0c190c427afee55b80a0195dc0ed0cdb2ec956871330e0b2f3a5"
@@ -390,6 +404,10 @@
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/aws-shell-0.2.2.big_sur.bottle.tar.gz",
               "sha256": "aee32db7e96f9239cf9bbb10d59589f9f890757efc73aab1f186dc2989fe211c"
+            },
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/aws-shell-0.2.2.arm64_big_sur.bottle.tar.gz",
+              "sha256": "9581121be45392c0cc78938f568562f61127966428e08635a8ea69f615d0c477"
             },
             "catalina": {
               "url": "https://homebrew.bintray.com/bottles/aws-shell-0.2.2.catalina.bottle.tar.gz",
@@ -430,6 +448,27 @@
             }
           }
         }
+      },
+      "minikube": {
+        "version": "1.16.0",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/minikube-1.16.0.big_sur.bottle.tar.gz",
+              "sha256": "1b6d7d1b97b11b6b07e4fa531c2dc21770da290da9b2816f360fd923e00c85fc"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/minikube-1.16.0.catalina.bottle.tar.gz",
+              "sha256": "232e37266350ad00be5b3f360564f8e4ebe0c5e4da9bf45e855a2a7fc9b5f1eb"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/minikube-1.16.0.mojave.bottle.tar.gz",
+              "sha256": "28f42d08bb00ffc800b381b6f6b80d5b20f5b2bfd90e62dd84585c18da87e693"
+            }
+          }
+        }
       }
     },
     "mas": {
@@ -439,8 +478,21 @@
       },
       "Spark": {
         "id": "1176895641",
-        "version": "2.9.13"
-      }
+        "version": "2.9.15"
+      },
+      "Amphetamine": {
+        "id": "937984704",
+        "version": "5.1.1"
+      },
+      "Gestimer": {
+        "id": "990588172",
+        "version": "1.2.6"
+      },
+      "LiquidText": {
+        "id": "922765270",
+        "version": "1.1.4"
+      },
+      "Day one": null
     }
   },
   "system": {
@@ -452,6 +504,14 @@
         "CLT": "12.3.0.0.1.1607026830",
         "Xcode": "12.0",
         "macOS": "11.1"
+      },
+      "catalina": {
+        "HOMEBREW_VERSION": "2.7.2",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "27706daf6f2c927dd6f5c896d018078130bfa0aa",
+        "CLT": "12.3.0.0.1.1607026830",
+        "Xcode": "12.0",
+        "macOS": "10.15.6"
       }
     }
   }

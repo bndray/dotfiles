@@ -23,7 +23,7 @@ brew "romkatv/powerlevel10k/powerlevel10k"
 brew "nodejs"
 brew "yarn"
 brew "aws-shell"
-#brew "awscli"                      # This seems to be AWS CLI V1 (not V2)
+#brew "awscli"                      # Old version. Better to download here: https://awscli.amazonaws.com/AWSCLIV2.pkg
 brew "minikube"						# Kubernetes for local clusters
 cask "docker"						# Docker Desktop (can be used as driver for minikube once Docker has been running)
 
@@ -64,9 +64,9 @@ cask "signal"
 cask "adobe-creative-cloud"
 cask "postman"
 cask "cardhop"
-cask "flotato"
+# cask "flotato"
 cask "quicken"
 cask "daisydisk"
 cask "dropbox"
-cask "Spotify"
+# cask "Spotify"
 cask "pock"                        # Mac touchbar dock (https://github.com/pigigaldi/Pock)
