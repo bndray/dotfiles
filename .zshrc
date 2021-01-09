@@ -1,8 +1,7 @@
 ## This line is used for the bare git repo dot files (https://www.atlassian.com/git/tutorials/dotfiles)
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/ben/.oh-my-zsh"
+
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -10,8 +9,10 @@ export ZSH="/Users/ben/.oh-my-zsh"
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+ZSH_DISABLE_COMPFIX="true"
 
-
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/ben/.oh-my-zsh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
