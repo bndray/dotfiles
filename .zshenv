@@ -10,3 +10,6 @@
 # careful to not modify the default behavior of standard commands because it may 
 # break some tools (by setting aliases for example).
 source "$HOME/.cargo/env"
+source "$HOME/.cargo/env"
+source "$HOME/.cargo/env"
+source "$HOME/.cargo/env"

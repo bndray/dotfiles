@@ -58,8 +58,6 @@ cask "handbrake"
 cask "fantastical"
 cask "gemini"
 cask "paragon-ntfs"                # For this to work, you have to do a manual step to navigate to and open the .app (otherwise just download and installl manually!)
-#cask "little-snitch"
-#cask "nordvpn"
 cask "signal"
 cask "adobe-creative-cloud"
 cask "postman"

@@ -2,6 +2,13 @@
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 
+echo "\n*** Adding Anaconda (brew cask) to PATH ***"
+# which conda
+# if [[ $? = 0 ]] ; then
+	typeset -U path
+	path=(/usr/local/anaconda3/bin "$path[@]")
+# fi
+
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -10,6 +17,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 ZSH_DISABLE_COMPFIX="true"
+
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ben/.oh-my-zsh"
