@@ -21,7 +21,6 @@ echo "\n*** Checking for (and installing if not present) Rust-lang ***"
 rustc --version
 if [[ $? != 0 ]] ; then
 	sh -c "$(curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \| sh)"     # Install Rust-lang.org
-	# echo 'source "$HOME/.cargo/env"' >> ~/.zshenv
 else
 	echo "Rust already installed"
 fi
