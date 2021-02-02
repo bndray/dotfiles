@@ -20,7 +20,7 @@ brew "romkatv/powerlevel10k/powerlevel10k"
 
 ## Languages....
 #brew install rust                 # I installed this manually (following Doug Milford's guide with VS Code)
-brew "nodejs"
+brew "node"
 brew "yarn"
 brew "aws-shell"
 #brew "awscli"                      # Old version. Better to download here: https://awscli.amazonaws.com/AWSCLIV2.pkg

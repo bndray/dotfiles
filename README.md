@@ -7,7 +7,7 @@
 `alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'`
 
 1. Clone this repo as a bare git repository into your `$HOME/.cfg` directory: 
-`git clone --bare git@github.com:bndray/dotfiles.git $HOME/.cfg`
+`git clone --bare https://github.com/bndray/dotfiles.git $HOME/.cfg`
 
 2. Assign this alias temporarily (ie just for the current terminal session):
 `alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'`
