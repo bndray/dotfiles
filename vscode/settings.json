@@ -1,0 +1,12 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 2000,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "aws.suppressPrompts": {
+        "codeWhispererNewWelcomeMessage": true
+    },
+    "editor.minimap.showSlider": "always"
+}
