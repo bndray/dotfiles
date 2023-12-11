@@ -9,7 +9,7 @@ brew "mas"                         # Install apps from Mac App Store
 cask "1password"
 
 # Install Oh-my-zsh extensions
-brew "powerlevel10k"
+# brew "powerlevel10k"
 
 
 brew "zsh-autosuggestions"
