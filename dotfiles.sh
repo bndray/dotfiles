@@ -15,7 +15,7 @@ for file in "${files[@]}"; do
     # Create a symbolic link
     ln -sf ~/.dotfiles/.${file} ~/.${file}
 done
-ln -sf ~/.dotfiles/custom_plugins.zsh ~/.oh-my-zsh/custom/custom_plugins.zsh
+ln -sf ~/.dotfiles/custom_plugins.zsh ~/.oh-my-zsh/custom/plugins/custom_plugins.zsh
 
 
 
