@@ -93,7 +93,8 @@ export ZSH="$HOME/.oh-my-zsh"
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-[[ ! -f $HOME/.oh-my-zsh/custom/themes/powerlevel10k ]] ||  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+[[ ! -d ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k ]] || /
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 source ~/.oh-my-zsh/custom/custom_plugins.zsh
@@ -132,5 +133,5 @@ alias python=python3
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+# source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
