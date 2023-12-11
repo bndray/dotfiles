@@ -34,8 +34,8 @@ which -s brew
 if [[ $? != 0 ]] ; then
     # Install Homebrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    #(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/ben/.zprofile       # disabled these two lines as they are in the symlinked .zprofile already
-    #eval "$(/opt/homebrew/bin/brew shellenv)"
+    # (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/ben/.zprofile       # disabled these two lines as they are in the symlinked .zprofile already
+    # eval "$(/opt/homebrew/bin/brew shellenv)"
 else
     brew update
     brew outdated
