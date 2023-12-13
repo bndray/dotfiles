@@ -8,8 +8,3 @@
 # as it may take some time to execute.
 # If you modify this file, you can apply the configuration updates by running a login shell:
 # exec zsh --login
-
-
-# Disable analytics of Brew (the brew command to accompany this is also specified in dotfiles.sh)
-export HOMEBREW_NO_ANALYTICS=1
-eval "$(/opt/homebrew/bin/brew shellenv)"

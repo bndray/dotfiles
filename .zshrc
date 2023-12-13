@@ -1,8 +1,6 @@
 echo "*** Starting ZSHRC ***"
 
-brew update
-brew outdated 
-brew upgrade
+
 
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.

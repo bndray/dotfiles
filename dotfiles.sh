@@ -98,12 +98,15 @@ sh -c "$(defaults write com.apple.finder AppleShowAllFiles true; killall Finder)
 
 
 ## --- section for installing python/node/rust etc packages
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 
 curl -sSL https://install.python-poetry.org | python3 -
-export PATH="/Users/ben/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
+# - add poetry completions to oh-my-zsh
+mkdir $ZSH_CUSTOM/plugins/poetry
+poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 
 
 source ~/.zshrc
