@@ -97,4 +97,13 @@ unset ZSH
 sh -c "$(defaults write com.apple.finder AppleShowAllFiles true; killall Finder)"   # Updates Finder settings to show all files by default
 
 
+## --- section for installing python/node/rust etc packages
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+
+
+curl -sSL https://install.python-poetry.org | python3 -
+export PATH="/Users/ben/.local/bin:$PATH"
+
+
+
 source ~/.zshrc
