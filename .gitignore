@@ -1,3 +1,5 @@
 secrets/*
 .DS_Store
 .ENV
+*.lock.*
+vars/

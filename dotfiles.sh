@@ -20,11 +20,11 @@ ln -sf ~/.dotfiles/custom_plugins.zsh ~/.oh-my-zsh/custom/plugins/custom_plugins
 
 
 # Install Node.js  (NOT through brew as it has caused problems in graphql serverless in the past)
-which node
-if [[ $? != 0 ]] ; then
-    curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
-    #npm install -g yarn
-fi
+# which node
+# if [[ $? != 0 ]] ; then
+#     curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
+#     #npm install -g yarn
+# fi
 
 
 
@@ -36,6 +36,8 @@ if [[ $? != 0 ]] ; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     # (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/ben/.zprofile       # disabled these two lines as they are in the symlinked .zprofile already
     # eval "$(/opt/homebrew/bin/brew shellenv)"
+
+    date +%s > ~/.dotfiles/vars/.last_brew_update      # create file (and containing directory) and store date of latest brew update
 else
     brew update
     brew outdated
@@ -46,7 +48,7 @@ fi
 brew analytics off
 
 ## Run Brewfile...
-brew bundle install
+brew bundle --cleanup #install
 
 
 ## Load personalised settings for ITerm from $HOME/.dotfiles/iterm

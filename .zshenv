@@ -18,9 +18,5 @@ else
     export PATH="/usr/local/bin:$PATH"
 fi
 
-export HOMEBREW_NO_ANALYTICS=1
+# export HOMEBREW_NO_ANALYTICS=1
 
-brew update
-brew outdated 
-brew upgrade
-echo "Brew updated 👍"

@@ -143,6 +143,24 @@ alias python=python3
 
 
 
+# Function to update Homebrew
+update_brew() {
+    echo "Updating Homebrew..."
+    brew update
+    brew outdated
+    brew upgrade
+    # Update the last update date
+    date +%s > ~/.dotfiles/vars/.last_brew_update
+}
+
+# Check if the last update was more than 5 days ago
+if [ ! -f ~/.dotfiles/vars/.last_brew_update ] || [ $(( $(date +%s) - $(cat ~/.dotfiles/vars/.last_brew_update) )) -gt $(( 5 * 24 * 60 * 60 )) ]; then
+    update_brew
+fi
+
+
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
