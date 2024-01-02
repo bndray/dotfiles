@@ -18,6 +18,7 @@ brew "zsh-autosuggestions"
 
 ## Languages....
 brew "python"
+brew "python3"
 # brew install rust                 # I installed this manually (following Doug Milford's guide with VS Code)
 brew "node"                       # !! Disabled for good reason - node somehow blocks graphql explorer working (think through bad install of sqlite possibly?)
 # brew "yarn"                         # Not needed as it can be installed with `npm install -g yarn`

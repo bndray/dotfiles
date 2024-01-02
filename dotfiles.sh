@@ -103,12 +103,24 @@ sh -c "$(defaults write com.apple.finder AppleShowAllFiles true; killall Finder)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 
+if [[ "$(uname -m)" == "arm64" ]]; then
+    # For Apple Silicon Macs
+    export PATH="/opt/homebrew/bin:$PATH"
+else
+    # For Intel Macs
+    export PATH="/usr/local/bin:$PATH"
+fi
+
+
 curl -sSL https://install.python-poetry.org | python3 -
 export PATH="$HOME/.local/bin:$PATH"
 
+
+
+
 # - add poetry completions to oh-my-zsh
-mkdir $ZSH_CUSTOM/plugins/poetry
-poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+# mkdir -p $ZSH_CUSTOM/plugins/poetry
+poetry completions zsh > ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/poetry/_poetry
 
 
 source ~/.zshrc

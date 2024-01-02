@@ -136,7 +136,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias python=python3
+#alias python=python3
 
 # To customize prompt, run `p10k configure` (if the condition if FALSE (file does not exist) then source then file)
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

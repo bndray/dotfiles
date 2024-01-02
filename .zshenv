@@ -10,13 +10,7 @@
 # careful to not modify the default behavior of standard commands because it may 
 # break some tools (by setting aliases for example).
 
-if [[ "$(uname -m)" == "arm64" ]]; then
-    # For Apple Silicon Macs
-    export PATH="/opt/homebrew/bin:$PATH"
-else
-    # For Intel Macs
-    export PATH="/usr/local/bin:$PATH"
-fi
+
 
 # export HOMEBREW_NO_ANALYTICS=1
 
