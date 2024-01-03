@@ -1,4 +1,4 @@
-echo "*** Starting ZSHRC ***"
+echo " ⚡️ Starting ZSHRC..."
 
 
 

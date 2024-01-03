@@ -1,6 +1,6 @@
 #!/bin/zsh
 ## NOTE: Mac fresh OS has ZSH and python3 by default.
-echo "*** Starting dotfiles ***"
+echo "⚡️ Starting dotfiles"
 
 
 
