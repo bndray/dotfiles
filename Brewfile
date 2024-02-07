@@ -24,7 +24,7 @@ brew "node"                       # !! Disabled for good reason - node somehow b
 # brew "yarn"                         # Not needed as it can be installed with `npm install -g yarn`
 # brew "poetry"                       # Python poetry 
 brew "aescrypt"
-brew "awscli"
+# brew "awscli"
 #brew "minikube"						# Kubernetes for local clusters
 #brew "ffmpeg"
 cask "docker"						# Docker Desktop (can be used as driver for minikube once Docker has been running)
