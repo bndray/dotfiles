@@ -9,6 +9,8 @@
 # If you modify this file, you can apply the configuration updates by running a login shell:
 # exec zsh --login
 
+# The below is the best place it update the PATH dependent on whether running on a computer with silicon or intel CPU
+
 if [[ "$(uname -m)" == "arm64" ]]; then
     # For Apple Silicon Macs
     echo "Adding /opt path for silicon CPU path"
@@ -17,5 +19,3 @@ else
     # For Intel Macs
     export PATH="/usr/local/bin:$PATH"
 fi
-
-# export PATH=/opt/homebrew/bin:$PATH
