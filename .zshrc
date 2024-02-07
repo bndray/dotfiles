@@ -15,7 +15,6 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 
 
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -102,7 +101,6 @@ plugins=(
 )
 
 
-
 if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k" ]; then
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 fi
@@ -157,7 +155,6 @@ update_brew() {
 if [ ! -f ~/.dotfiles/vars/.last_brew_update ] || [ $(( $(date +%s) - $(cat ~/.dotfiles/vars/.last_brew_update) )) -gt $(( 5 * 24 * 60 * 60 )) ]; then
     update_brew
 fi
-
 
 
 

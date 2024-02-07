@@ -27,6 +27,18 @@ ln -sf ~/.dotfiles/custom_plugins.zsh ~/.oh-my-zsh/custom/plugins/custom_plugins
 # fi
 
 
+# Start with a standard PATH and then update as required (e.g. silicon processor path changes etc)
+# export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
+
+# if [[ "$(uname -m)" == "arm64" ]]; then
+#     # For Apple Silicon Macs
+#     echo "Adding /opt path for silicon CPU path"
+#     export PATH="/opt/homebrew/bin:$PATH"
+# else
+#     # For Intel Macs
+#     export PATH="/usr/local/bin:$PATH"
+# fi
+
 
 
 # Install Brew and then run it over my ~/Brewfile...
@@ -100,18 +112,6 @@ sh -c "$(defaults write com.apple.finder AppleShowAllFiles true; killall Finder)
 
 
 ## --- section for installing python/node/rust etc packages
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-
-
-if [[ "$(uname -m)" == "arm64" ]]; then
-    # For Apple Silicon Macs
-    export PATH="/opt/homebrew/bin:$PATH"
-else
-    # For Intel Macs
-    export PATH="/usr/local/bin:$PATH"
-fi
-
-
 curl -sSL https://install.python-poetry.org | python3 -
 export PATH="$HOME/.local/bin:$PATH"
 
