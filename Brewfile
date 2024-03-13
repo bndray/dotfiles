@@ -28,6 +28,7 @@ brew "aescrypt"
 #brew "minikube"						# Kubernetes for local clusters
 #brew "ffmpeg"
 cask "docker"						# Docker Desktop (can be used as driver for minikube once Docker has been running)
+cask "slack"
 
 
 # Mac Appstore installations...
