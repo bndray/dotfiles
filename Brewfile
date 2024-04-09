@@ -71,4 +71,5 @@ cask "dropbox"
 cask "postman"                     # API platform for testing GET/POST methods etc
 cask "nordvpn"
 # cask "folx"
+cask "audacity"
 
